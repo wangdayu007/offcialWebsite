@@ -36,6 +36,14 @@
   <link rel="preload" as="image" href="./assets/images/hero-slider-1.png">
   <link rel="preload" as="image" href="./assets/images/hero-slider-2.png">
   <link rel="preload" as="image" href="./assets/images/hero-slider-3.png">
+  <style>
+    .translateSelectLanguage{
+      color:#fff;
+    }
+    .translateSelectLanguage option{
+      color: black;
+    }
+  </style>
 
 </head>
 
@@ -74,7 +82,7 @@
 
       <div class="separator"></div>
 
-      <div class="topbar-item item-2">
+      <div class="topbar-item item-2" id="translate">
         <!-- <div class="icon">
           <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
         </div> -->
@@ -1028,7 +1036,7 @@
                   <p class="card-subtitle label-2 text-center">Cover Design</p>
 
                   <h3 class="card-title title-2 text-center">
-                    Flavour so good you’ll try to eat with your eyes.
+                    Brand publication cover design.
                   </h3>
                 </div>
 
@@ -1049,7 +1057,7 @@
                   <p class="card-subtitle label-2 text-center">packaging design</p>
 
                   <h3 class="card-title title-2 text-center">
-                    Flavour so good you’ll try to eat with your eyes.
+                    Exquisite design of brand packaging.
                   </h3>
                 </div>
 
@@ -1070,7 +1078,7 @@
                   <p class="card-subtitle label-2 text-center">chinese Style design</p>
 
                   <h3 class="card-title title-2 text-center">
-                    Flavour so good you’ll try to eat with your eyes.
+                    Chinese style Brand design
                   </h3>
                 </div>
 
@@ -1234,12 +1242,18 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/translate.js"></script>
 
   <!-- 
     - ionicon link
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    translate.setUseVersion2(); //设置使用v2.x 版本
+    translate.execute(); //执行翻译初始化操作，显示出select语言选择
+  </script>
 
 </body>
 
